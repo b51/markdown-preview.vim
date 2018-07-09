@@ -117,7 +117,7 @@ endif
 if g:mkdp_command_for_global
     au BufEnter * command! -buffer MarkdownPreview call s:serverStart()
 else
-    au BufEnter *.{md,mkd,markdown,mdown,mkdn,mdwn} command! -buffer MarkdownPreview call s:serverStart()
+    au BufEnter *.{md,mkd,markdown,mdown,mkdn,mdwn,wiki} command! -buffer MarkdownPreview call s:serverStart()
 endif
 
 " mapping for user
